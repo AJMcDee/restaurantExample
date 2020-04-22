@@ -20,6 +20,7 @@ function makeContentElement(element, id, textContent) {
 function makeNavElement(element, id, textContent) {
     const newEl = document.createElement(element)
     newEl.id = id;
+    newEl.style.cursor = "pointer";
     newEl.classList.add("navTab")
     newEl.textContent = textContent;
     navBar.appendChild(newEl);
