@@ -1,0 +1,83 @@
+body {
+    background-image: url(https://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;;
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.navTab {
+    background-color: black;
+    width: fit-content;
+    padding: 20px;
+    margin: 5px;
+    font-size: 8vh;
+    opacity: 0.5;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    opacity: 0.8;
+    background-color: black;
+    margin: 10vh 5vw auto 5vw;
+    padding: 5vw;
+    border: 5px solid red;
+    border-radius: 20px;
+    font-size: 3vh;
+    line-height: 1.5;
+}
+
+input {
+    display: inline;
+    line-height: 2.3;
+    vertical-align: center;
+}
+
+td {
+    padding: 5px;
+}
+
+#columnTitles {
+    font-weight: bold;
+}
+
+#menutable {
+    border: 2px solid white;
+}
+
+#openinghours {
+    border: 1px solid white;
+    font-size: 2vh;
+    align-self: flex-end;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#submitContact {
+    background-color: red;
+    width: fit-content;
+    padding: 5px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 10%;
+}

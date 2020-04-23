@@ -3,11 +3,6 @@ import * as help from './helpers.js'
 import {populateContactTab} from './contactTab.js'
 import {populateMenuTab} from './menuTab.js'
 
-
-onLoad.homeLoad()
-
-help.makeClassEvents("navTab", "click", e => {clearAndPopulate(e)})
-
 const clearAndPopulate = function(e) {
     help.contentDiv.innerHTML = "";
     const source = e.target.id
@@ -19,5 +14,12 @@ const clearAndPopulate = function(e) {
         populateContactTab()
     }
 }
+
+
+onLoad.homeLoad()
+
+help.makeClassEvents("navTab", "click", e => {clearAndPopulate(e)})
+
+
 
 

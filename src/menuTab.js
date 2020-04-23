@@ -15,11 +15,12 @@ class MenuItem {
         }
 }
 
-/// Fix this to automatically insert for each new menu item
 export function populateMenuTab(){
 
     help.makeContentElement("h1", "menuTitle", "Menu")
     const menuTable = help.makeContentElement("table", "menuTable", "")
+    menuTable.innerHTML = `<tr id="columnTitles"><td>Item<td>Description<td>Price</tr>`
+
 
     let item1 = new MenuItem("Tiramisu", "Delicious tiramisu is so delicious!", "$3.99").insert()
 

@@ -9,10 +9,10 @@ function makeElement(element, id, textContent, parentNode) {
     return newEl
 }
 
-function makeContentElement(element, id, textContent) {
+function makeContentElement(element, id, innerHTML) {
     const newEl = document.createElement(element)
     newEl.id = id;
-    newEl.textContent = textContent;
+    newEl.innerHTML = innerHTML;
     contentDiv.appendChild(newEl);
     return newEl
 }
